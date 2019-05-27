@@ -3,6 +3,7 @@ require 'pry'
 class Song
   
   extend Memorable::ClassMethods
+  include Findable::IntanceMethods
   
   attr_accessor :name
   attr_reader :artist
